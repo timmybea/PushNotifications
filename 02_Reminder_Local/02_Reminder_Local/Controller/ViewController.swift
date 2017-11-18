@@ -12,14 +12,25 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        UNService.shared.requestPermission()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func dateTapped(sender: UIButton) {
+    
+        print("DATE")
     }
 
+    @IBAction func timeTapped(sender: UIButton) {
+    
+        print("TIME")
+        UNService.shared.timerRequest(with: 5.0)
+    }
 
+    @IBAction func locationTapped(sender: UIButton) {
+        
+        print("LOCATION")
+    }
+    
 }
 

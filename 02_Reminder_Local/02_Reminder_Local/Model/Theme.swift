@@ -20,10 +20,7 @@ struct Theme {
             case .dateIcon: return UIImage(named: "dateIcon") ?? UIImage()
             case .calendarIcon: return UIImage(named: "calendarIcon") ?? UIImage()
             case .locationIcon: return UIImage(named: "locationIcon") ?? UIImage()
+            }
         }
     }
-    
-    
-    
 }
-
