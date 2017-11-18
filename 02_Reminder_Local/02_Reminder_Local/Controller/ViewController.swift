@@ -17,18 +17,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func dateTapped(sender: UIButton) {
-    
         print("DATE")
+        AlertService.actionSheet(in: self, title: "Every minute") {
+            var components = DateComponents()
+            components.second = 0
+            UNService.shared.dateRequest(with: components)
+        }
     }
 
     @IBAction func timeTapped(sender: UIButton) {
-    
         print("TIME")
-        UNService.shared.timerRequest(with: 5.0)
+        AlertService.actionSheet(in: self, title: "5 Seconds") {
+            
+            UNService.shared.timerRequest(with: 5.0)
+        }
     }
 
     @IBAction func locationTapped(sender: UIButton) {
-        
         print("LOCATION")
     }
     

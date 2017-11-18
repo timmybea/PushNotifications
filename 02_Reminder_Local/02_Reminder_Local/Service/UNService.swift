@@ -37,6 +37,8 @@ class UNService: NSObject {
         let content = UNMutableNotificationContent()
         content.title = "TIMER COMPLETED"
         content.body = "Your timer has ended. Yay."
+        content.sound = .default()
+        content.badge = 1
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: false)
         let request = UNNotificationRequest(identifier: "userNotification.timer", content: content, trigger: trigger)
@@ -47,7 +49,15 @@ class UNService: NSObject {
     }
     
     func dateRequest(with components: DateComponents) {
+        let content = UNMutableNotificationContent()
+        content.title = "TODAY IS THE DAY"
+        content.body = "Is there something important that you should do before the sun sets?"
+        content.sound = .default()
+        content.badge = 1
         
+        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
+        let request = UNNotificationRequest(identifier: "userNotification.date", content: content, trigger: trigger)
+        unCenter.add(request) //This is the concise way without completion handler.
     }
     
     func locationRequest() {
