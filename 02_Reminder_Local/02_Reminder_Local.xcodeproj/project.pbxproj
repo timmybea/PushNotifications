@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B06A67701FC6443A00C95693 /* CLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06A676F1FC6443A00C95693 /* CLService.swift */; };
 		B0AD4EB41FC0B7F600DFBEDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD4EB31FC0B7F600DFBEDC /* AppDelegate.swift */; };
 		B0AD4EB61FC0B7F600DFBEDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD4EB51FC0B7F600DFBEDC /* ViewController.swift */; };
 		B0AD4EB91FC0B7F600DFBEDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AD4EB71FC0B7F600DFBEDC /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B06A676F1FC6443A00C95693 /* CLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLService.swift; sourceTree = "<group>"; };
 		B0AD4EB01FC0B7F600DFBEDC /* 02_Reminder_Local.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 02_Reminder_Local.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AD4EB31FC0B7F600DFBEDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0AD4EB51FC0B7F600DFBEDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			children = (
 				B0AD4EF01FC0CACD00DFBEDC /* UNService.swift */,
 				B0AD4EF21FC0E6E300DFBEDC /* AlertService.swift */,
+				B06A676F1FC6443A00C95693 /* CLService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				B0AD4EB61FC0B7F600DFBEDC /* ViewController.swift in Sources */,
 				B0AD4EE81FC0BE3300DFBEDC /* Theme.swift in Sources */,
 				B0AD4EE61FC0B90400DFBEDC /* ShadowView.swift in Sources */,
+				B06A67701FC6443A00C95693 /* CLService.swift in Sources */,
 				B0AD4EB41FC0B7F600DFBEDC /* AppDelegate.swift in Sources */,
 				B0AD4EF31FC0E6E300DFBEDC /* AlertService.swift in Sources */,
 				B0AD4EF11FC0CACD00DFBEDC /* UNService.swift in Sources */,
