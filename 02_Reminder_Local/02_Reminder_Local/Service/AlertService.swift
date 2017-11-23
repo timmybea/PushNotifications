@@ -20,6 +20,4 @@ class AlertService: NSObject {
         alert.addAction(action)
         vc.present(alert, animated: true)
     }
-    
-
 }

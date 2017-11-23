@@ -6,7 +6,7 @@
 //  Copyright © 2017 Tim Beals. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import CoreLocation
 
 class CLService: NSObject {
@@ -40,18 +40,12 @@ extension CLService: CLLocationManagerDelegate {
                                       radius: 20,
                                       identifier: "currLocation")
         manager.startMonitoring(for: region)
-        
-        
     }
-    
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         print("Did enter region")
-        
         NotificationCenter.default.post(name: NSNotification.Name("internalNotification.enteredRegion"),
                                         object: nil)
-        
-        
     }
     
 }

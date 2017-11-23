@@ -35,7 +35,6 @@ class ViewController: UIViewController {
     @IBAction func timeTapped(sender: UIButton) {
         print("TIME")
         AlertService.actionSheet(in: self, title: "5 Seconds") {
-            
             UNService.shared.timerRequest(with: 5.0)
         }
     }
