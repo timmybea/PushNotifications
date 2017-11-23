@@ -14,6 +14,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         UNService.shared.requestPermission()
+        CLService.shared.requestPermission()
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(didEnterRegion),
+                                               name: NSNotification.Name("internalNotification.enteredRegion"),
+                                               object: nil)
+        
     }
 
     @IBAction func dateTapped(sender: UIButton) {
@@ -35,6 +42,15 @@ class ViewController: UIViewController {
 
     @IBAction func locationTapped(sender: UIButton) {
         print("LOCATION")
+        AlertService.actionSheet(in: self, title: "Where in the world!?") {
+            CLService.shared.updateLocation()
+        }
+        
+    }
+    
+    @objc
+    func didEnterRegion() {
+        UNService.shared.locationRequest()
     }
     
 }

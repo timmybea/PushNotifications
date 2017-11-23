@@ -61,7 +61,15 @@ class UNService: NSObject {
     }
     
     func locationRequest() {
+        let content = UNMutableNotificationContent()
+        content.title = "HERE YOU ARE!"
+        content.body = "You have reentered the location that you set."
+        content.sound = .default()
+        content.badge = 1
         
+        //NOTE THAT AT THE TIME OF THIS TUTORIAN 'UNLocationNotificationTrigger' IS UNRELIABLE, WHICH IS WHY WE IMPLEMENTED THE CL SERVICE CLASS.
+        let request = UNNotificationRequest(identifier: "userNotification.location", content: content, trigger: nil)
+        unCenter.add(request)
     }
 }
 
