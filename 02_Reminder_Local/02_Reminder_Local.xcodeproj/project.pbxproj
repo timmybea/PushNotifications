@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B01430BE1FC9DC2700F78C7A /* NotificationAttachmentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01430BD1FC9DC2700F78C7A /* NotificationAttachmentID.swift */; };
+		B01430BE1FC9DC2700F78C7A /* NotificationAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01430BD1FC9DC2700F78C7A /* NotificationAttachment.swift */; };
 		B01430C61FC9DDF600F78C7A /* DateAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = B01430C51FC9DDF600F78C7A /* DateAlert.png */; };
 		B01430C81FC9DE0700F78C7A /* LocationAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = B01430C71FC9DE0700F78C7A /* LocationAlert.png */; };
 		B01430CA1FC9DE1500F78C7A /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = B01430C91FC9DE1400F78C7A /* TimeAlert.png */; };
+		B01430CC1FC9F80400F78C7A /* NotificationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01430CB1FC9F80400F78C7A /* NotificationAction.swift */; };
+		B01430CE1FC9FA7A00F78C7A /* NotificationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01430CD1FC9FA7A00F78C7A /* NotificationCategory.swift */; };
 		B06A67701FC6443A00C95693 /* CLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06A676F1FC6443A00C95693 /* CLService.swift */; };
 		B0AD4EB41FC0B7F600DFBEDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD4EB31FC0B7F600DFBEDC /* AppDelegate.swift */; };
 		B0AD4EB61FC0B7F600DFBEDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD4EB51FC0B7F600DFBEDC /* ViewController.swift */; };
@@ -43,10 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B01430BD1FC9DC2700F78C7A /* NotificationAttachmentID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAttachmentID.swift; sourceTree = "<group>"; };
+		B01430BD1FC9DC2700F78C7A /* NotificationAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAttachment.swift; sourceTree = "<group>"; };
 		B01430C51FC9DDF600F78C7A /* DateAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateAlert.png; sourceTree = "<group>"; };
 		B01430C71FC9DE0700F78C7A /* LocationAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationAlert.png; sourceTree = "<group>"; };
 		B01430C91FC9DE1400F78C7A /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
+		B01430CB1FC9F80400F78C7A /* NotificationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAction.swift; sourceTree = "<group>"; };
+		B01430CD1FC9FA7A00F78C7A /* NotificationCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCategory.swift; sourceTree = "<group>"; };
 		B06A676F1FC6443A00C95693 /* CLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLService.swift; sourceTree = "<group>"; };
 		B0AD4EB01FC0B7F600DFBEDC /* 02_Reminder_Local.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 02_Reminder_Local.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AD4EB31FC0B7F600DFBEDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,7 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				B0AD4EE71FC0BE3300DFBEDC /* Theme.swift */,
-				B01430BD1FC9DC2700F78C7A /* NotificationAttachmentID.swift */,
+				B01430BD1FC9DC2700F78C7A /* NotificationAttachment.swift */,
+				B01430CB1FC9F80400F78C7A /* NotificationAction.swift */,
+				B01430CD1FC9FA7A00F78C7A /* NotificationCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,13 +335,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B01430CE1FC9FA7A00F78C7A /* NotificationCategory.swift in Sources */,
 				B0AD4EB61FC0B7F600DFBEDC /* ViewController.swift in Sources */,
 				B0AD4EE81FC0BE3300DFBEDC /* Theme.swift in Sources */,
 				B0AD4EE61FC0B90400DFBEDC /* ShadowView.swift in Sources */,
 				B06A67701FC6443A00C95693 /* CLService.swift in Sources */,
 				B0AD4EB41FC0B7F600DFBEDC /* AppDelegate.swift in Sources */,
+				B01430CC1FC9F80400F78C7A /* NotificationAction.swift in Sources */,
 				B0AD4EF31FC0E6E300DFBEDC /* AlertService.swift in Sources */,
-				B01430BE1FC9DC2700F78C7A /* NotificationAttachmentID.swift in Sources */,
+				B01430BE1FC9DC2700F78C7A /* NotificationAttachment.swift in Sources */,
 				B0AD4EF11FC0CACD00DFBEDC /* UNService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

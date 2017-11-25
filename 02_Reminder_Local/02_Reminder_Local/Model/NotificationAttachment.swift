@@ -8,16 +8,25 @@
 
 import Foundation
 
-enum NotificationAttachmentID: String {
-    case timer = "userNotification.attachment.timer"
-    case date = "userNotification.attachment.date"
-    case location = "userNotification.attachment.location"
+enum NotificationAttachment {
+    
+    case timer
+    case date
+    case location
     
     var imageName: String {
         switch self {
         case .date: return "DateAlert"
         case .location: return "LocationAlert"
         case .timer: return "TimeAlert"
+        }
+    }
+    
+    var id: String {
+        switch self {
+        case .date: return "userNotification.attachment.date"
+        case .location: return "userNotification.attachment.location"
+        case .timer: return "userNotification.attachment.timer"
         }
     }
 }

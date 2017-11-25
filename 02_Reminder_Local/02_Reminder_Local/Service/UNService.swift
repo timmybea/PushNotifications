@@ -30,6 +30,7 @@ class UNService: NSObject {
     
     private func configure() {
         unCenter.delegate = self
+        setupActionsAndCategories()
     }
     
     //MARK: REQUEST TYPES
@@ -39,6 +40,7 @@ class UNService: NSObject {
         content.body = "Your timer has ended. Yay."
         content.sound = .default()
         content.badge = 1
+        content.categoryIdentifier = NotificationCategory.timer.id
         
         if let attachment = getAttachment(for: .timer) {
             content.attachments = [attachment]
@@ -57,6 +59,7 @@ class UNService: NSObject {
         content.body = "Is there something important that you should do before the sun sets?"
         content.sound = .default()
         content.badge = 1
+        content.categoryIdentifier = NotificationCategory.date.id
         
         if let attachment = getAttachment(for: .date) {
             content.attachments = [attachment]
@@ -73,6 +76,7 @@ class UNService: NSObject {
         content.body = "You have reentered the location that you set."
         content.sound = .default()
         content.badge = 1
+        content.categoryIdentifier = NotificationCategory.location.id
         
         if let attachment = getAttachment(for: .location) {
             content.attachments = [attachment]
@@ -83,19 +87,41 @@ class UNService: NSObject {
         unCenter.add(request)
     }
     
-    func getAttachment(for id: NotificationAttachmentID) -> UNNotificationAttachment?{
+    func setupActionsAndCategories() {
+        let timerAction = UNNotificationAction(identifier: NotificationAction.timer.id,
+                                               title: "Run Timer Logic",
+                                               options: [.authenticationRequired])
+        
+        let dateAction = UNNotificationAction(identifier: NotificationAction.date.id, title: "Run Date Logic", options: [.destructive])
+        
+        let locationAction = UNNotificationAction(identifier: NotificationAction.location.id, title: "Run location Logic", options: [.foreground])
+        
+        /* NotificationActionOptions:
+         authenticationRequired - User must unlock their phone before logic will run in the background
+         destructive - The button will be red. Logic will run in the background
+         foreground - brings the app into the foreground before running the logic
+         */
+        
+        let timerCategory = UNNotificationCategory(identifier: NotificationCategory.timer.id,
+                                                   actions: [timerAction],
+                                                   intentIdentifiers: [])
+        
+        let dateCategory = UNNotificationCategory(identifier: NotificationCategory.date.id,
+                                                  actions: [dateAction],
+                                                  intentIdentifiers: [])
+        
+        let locationCategory = UNNotificationCategory(identifier: NotificationCategory.location.id,
+                                                      actions: [locationAction],
+                                                      intentIdentifiers: [])
+        unCenter.setNotificationCategories([timerCategory, dateCategory, locationCategory])
+    }
+    
+    func getAttachment(for attachment: NotificationAttachment) -> UNNotificationAttachment?{
         /* Put the alert images in the bundle as opposed to the assets folder, otherwise you will have to
         use file paths to access the image data */
-        
-        let imageName: String = id.imageName
+        let imageName: String = attachment.imageName
         guard let url = Bundle.main.url(forResource: imageName, withExtension: "png") else { return nil }
-//        do {
-//            let attachment = try UNNotificationAttachment(identifier: id.rawValue, url: url, options: nil)
-//            return attachment
-//        } catch {
-//            return nil
-//        }
-        return try? UNNotificationAttachment(identifier: id.rawValue, url: url, options: nil)
+        return try? UNNotificationAttachment(identifier: attachment.id, url: url, options: nil)
     }
 }
 
@@ -110,6 +136,9 @@ extension UNService: UNUserNotificationCenterDelegate {
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         print("UN did receive response")
+        /* This will be triggered when you push the action button below the notification, and you can direct to logic for each type of action*/
+        let action = response.actionIdentifier
+        NotificationCenter.default.post(name: NSNotification.Name("internalNotification.handleAction"), object: action)
         
         completionHandler()
     }

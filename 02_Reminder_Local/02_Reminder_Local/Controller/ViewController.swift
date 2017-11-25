@@ -20,7 +20,11 @@ class ViewController: UIViewController {
                                                selector: #selector(didEnterRegion),
                                                name: NSNotification.Name("internalNotification.enteredRegion"),
                                                object: nil)
-        
+
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(handleNotificationAction(_:)),
+                                               name: NSNotification.Name("internalNotification.handleAction"),
+                                               object: nil)
     }
 
     @IBAction func dateTapped(sender: UIButton) {
@@ -50,6 +54,18 @@ class ViewController: UIViewController {
     @objc
     func didEnterRegion() {
         UNService.shared.locationRequest()
+    }
+    
+    @objc
+    func handleNotificationAction(_ sender: Notification) {
+        guard let action = sender.object as? String else { return }
+        
+        switch action {
+        case NotificationAction.date.id: print("DATE ACTION")
+        case NotificationAction.location.id: print("LOCATION ACTION")
+        case NotificationAction.timer.id: print("TIME ACTION")
+        default: print("uh-oh")
+        }
     }
     
 }
