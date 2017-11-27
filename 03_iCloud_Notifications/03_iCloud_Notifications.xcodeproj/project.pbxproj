@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B013C01D1FCCD7F70080BDD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C01C1FCCD7F70080BDD7 /* AppDelegate.swift */; };
+		B013C01F1FCCD7F70080BDD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C01E1FCCD7F70080BDD7 /* ViewController.swift */; };
+		B013C0221FCCD7F70080BDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B013C0201FCCD7F70080BDD7 /* Main.storyboard */; };
+		B013C0241FCCD7F70080BDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B013C0231FCCD7F70080BDD7 /* Assets.xcassets */; };
+		B013C0271FCCD7F70080BDD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B013C0251FCCD7F70080BDD7 /* LaunchScreen.storyboard */; };
+		B013C0321FCCD7F70080BDD7 /* _3_iCloud_NotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C0311FCCD7F70080BDD7 /* _3_iCloud_NotificationsTests.swift */; };
+		B013C03D1FCCD7F70080BDD7 /* _3_iCloud_NotificationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C03C1FCCD7F70080BDD7 /* _3_iCloud_NotificationsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B013C02E1FCCD7F70080BDD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B013C0111FCCD7F70080BDD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B013C0181FCCD7F70080BDD7;
+			remoteInfo = 03_iCloud_Notifications;
+		};
+		B013C0391FCCD7F70080BDD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B013C0111FCCD7F70080BDD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B013C0181FCCD7F70080BDD7;
+			remoteInfo = 03_iCloud_Notifications;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B013C0191FCCD7F70080BDD7 /* 03_iCloud_Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 03_iCloud_Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B013C01C1FCCD7F70080BDD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B013C01E1FCCD7F70080BDD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B013C0211FCCD7F70080BDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B013C0231FCCD7F70080BDD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B013C0261FCCD7F70080BDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B013C0281FCCD7F70080BDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B013C02D1FCCD7F70080BDD7 /* 03_iCloud_NotificationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 03_iCloud_NotificationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B013C0311FCCD7F70080BDD7 /* _3_iCloud_NotificationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_iCloud_NotificationsTests.swift; sourceTree = "<group>"; };
+		B013C0331FCCD7F70080BDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B013C0381FCCD7F70080BDD7 /* 03_iCloud_NotificationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 03_iCloud_NotificationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B013C03C1FCCD7F70080BDD7 /* _3_iCloud_NotificationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_iCloud_NotificationsUITests.swift; sourceTree = "<group>"; };
+		B013C03E1FCCD7F70080BDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B013C0161FCCD7F70080BDD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B013C02A1FCCD7F70080BDD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B013C0351FCCD7F70080BDD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B013C0101FCCD7F70080BDD7 = {
+			isa = PBXGroup;
+			children = (
+				B013C01B1FCCD7F70080BDD7 /* 03_iCloud_Notifications */,
+				B013C0301FCCD7F70080BDD7 /* 03_iCloud_NotificationsTests */,
+				B013C03B1FCCD7F70080BDD7 /* 03_iCloud_NotificationsUITests */,
+				B013C01A1FCCD7F70080BDD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B013C01A1FCCD7F70080BDD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B013C0191FCCD7F70080BDD7 /* 03_iCloud_Notifications.app */,
+				B013C02D1FCCD7F70080BDD7 /* 03_iCloud_NotificationsTests.xctest */,
+				B013C0381FCCD7F70080BDD7 /* 03_iCloud_NotificationsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B013C01B1FCCD7F70080BDD7 /* 03_iCloud_Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				B013C01C1FCCD7F70080BDD7 /* AppDelegate.swift */,
+				B013C01E1FCCD7F70080BDD7 /* ViewController.swift */,
+				B013C0201FCCD7F70080BDD7 /* Main.storyboard */,
+				B013C0231FCCD7F70080BDD7 /* Assets.xcassets */,
+				B013C0251FCCD7F70080BDD7 /* LaunchScreen.storyboard */,
+				B013C0281FCCD7F70080BDD7 /* Info.plist */,
+			);
+			path = 03_iCloud_Notifications;
+			sourceTree = "<group>";
+		};
+		B013C0301FCCD7F70080BDD7 /* 03_iCloud_NotificationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B013C0311FCCD7F70080BDD7 /* _3_iCloud_NotificationsTests.swift */,
+				B013C0331FCCD7F70080BDD7 /* Info.plist */,
+			);
+			path = 03_iCloud_NotificationsTests;
+			sourceTree = "<group>";
+		};
+		B013C03B1FCCD7F70080BDD7 /* 03_iCloud_NotificationsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B013C03C1FCCD7F70080BDD7 /* _3_iCloud_NotificationsUITests.swift */,
+				B013C03E1FCCD7F70080BDD7 /* Info.plist */,
+			);
+			path = 03_iCloud_NotificationsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B013C0181FCCD7F70080BDD7 /* 03_iCloud_Notifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B013C0411FCCD7F70080BDD7 /* Build configuration list for PBXNativeTarget "03_iCloud_Notifications" */;
+			buildPhases = (
+				B013C0151FCCD7F70080BDD7 /* Sources */,
+				B013C0161FCCD7F70080BDD7 /* Frameworks */,
+				B013C0171FCCD7F70080BDD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 03_iCloud_Notifications;
+			productName = 03_iCloud_Notifications;
+			productReference = B013C0191FCCD7F70080BDD7 /* 03_iCloud_Notifications.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B013C02C1FCCD7F70080BDD7 /* 03_iCloud_NotificationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B013C0441FCCD7F70080BDD7 /* Build configuration list for PBXNativeTarget "03_iCloud_NotificationsTests" */;
+			buildPhases = (
+				B013C0291FCCD7F70080BDD7 /* Sources */,
+				B013C02A1FCCD7F70080BDD7 /* Frameworks */,
+				B013C02B1FCCD7F70080BDD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B013C02F1FCCD7F70080BDD7 /* PBXTargetDependency */,
+			);
+			name = 03_iCloud_NotificationsTests;
+			productName = 03_iCloud_NotificationsTests;
+			productReference = B013C02D1FCCD7F70080BDD7 /* 03_iCloud_NotificationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B013C0371FCCD7F70080BDD7 /* 03_iCloud_NotificationsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B013C0471FCCD7F70080BDD7 /* Build configuration list for PBXNativeTarget "03_iCloud_NotificationsUITests" */;
+			buildPhases = (
+				B013C0341FCCD7F70080BDD7 /* Sources */,
+				B013C0351FCCD7F70080BDD7 /* Frameworks */,
+				B013C0361FCCD7F70080BDD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B013C03A1FCCD7F70080BDD7 /* PBXTargetDependency */,
+			);
+			name = 03_iCloud_NotificationsUITests;
+			productName = 03_iCloud_NotificationsUITests;
+			productReference = B013C0381FCCD7F70080BDD7 /* 03_iCloud_NotificationsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B013C0111FCCD7F70080BDD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Tim Beals";
+				TargetAttributes = {
+					B013C0181FCCD7F70080BDD7 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					B013C02C1FCCD7F70080BDD7 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B013C0181FCCD7F70080BDD7;
+					};
+					B013C0371FCCD7F70080BDD7 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B013C0181FCCD7F70080BDD7;
+					};
+				};
+			};
+			buildConfigurationList = B013C0141FCCD7F70080BDD7 /* Build configuration list for PBXProject "03_iCloud_Notifications" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B013C0101FCCD7F70080BDD7;
+			productRefGroup = B013C01A1FCCD7F70080BDD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B013C0181FCCD7F70080BDD7 /* 03_iCloud_Notifications */,
+				B013C02C1FCCD7F70080BDD7 /* 03_iCloud_NotificationsTests */,
+				B013C0371FCCD7F70080BDD7 /* 03_iCloud_NotificationsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B013C0171FCCD7F70080BDD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B013C0271FCCD7F70080BDD7 /* LaunchScreen.storyboard in Resources */,
+				B013C0241FCCD7F70080BDD7 /* Assets.xcassets in Resources */,
+				B013C0221FCCD7F70080BDD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B013C02B1FCCD7F70080BDD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B013C0361FCCD7F70080BDD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B013C0151FCCD7F70080BDD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B013C01F1FCCD7F70080BDD7 /* ViewController.swift in Sources */,
+				B013C01D1FCCD7F70080BDD7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B013C0291FCCD7F70080BDD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B013C0321FCCD7F70080BDD7 /* _3_iCloud_NotificationsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B013C0341FCCD7F70080BDD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B013C03D1FCCD7F70080BDD7 /* _3_iCloud_NotificationsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B013C02F1FCCD7F70080BDD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B013C0181FCCD7F70080BDD7 /* 03_iCloud_Notifications */;
+			targetProxy = B013C02E1FCCD7F70080BDD7 /* PBXContainerItemProxy */;
+		};
+		B013C03A1FCCD7F70080BDD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B013C0181FCCD7F70080BDD7 /* 03_iCloud_Notifications */;
+			targetProxy = B013C0391FCCD7F70080BDD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B013C0201FCCD7F70080BDD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B013C0211FCCD7F70080BDD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B013C0251FCCD7F70080BDD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B013C0261FCCD7F70080BDD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B013C03F1FCCD7F70080BDD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B013C0401FCCD7F70080BDD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B013C0421FCCD7F70080BDD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NXK8LBV53;
+				INFOPLIST_FILE = 03_iCloud_Notifications/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "timbeals.-3-iCloud-Notifications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B013C0431FCCD7F70080BDD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NXK8LBV53;
+				INFOPLIST_FILE = 03_iCloud_Notifications/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "timbeals.-3-iCloud-Notifications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B013C0451FCCD7F70080BDD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NXK8LBV53;
+				INFOPLIST_FILE = 03_iCloud_NotificationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "timbeals.-3-iCloud-NotificationsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03_iCloud_Notifications.app/03_iCloud_Notifications";
+			};
+			name = Debug;
+		};
+		B013C0461FCCD7F70080BDD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NXK8LBV53;
+				INFOPLIST_FILE = 03_iCloud_NotificationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "timbeals.-3-iCloud-NotificationsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03_iCloud_Notifications.app/03_iCloud_Notifications";
+			};
+			name = Release;
+		};
+		B013C0481FCCD7F70080BDD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NXK8LBV53;
+				INFOPLIST_FILE = 03_iCloud_NotificationsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "timbeals.-3-iCloud-NotificationsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 03_iCloud_Notifications;
+			};
+			name = Debug;
+		};
+		B013C0491FCCD7F70080BDD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NXK8LBV53;
+				INFOPLIST_FILE = 03_iCloud_NotificationsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "timbeals.-3-iCloud-NotificationsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 03_iCloud_Notifications;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B013C0141FCCD7F70080BDD7 /* Build configuration list for PBXProject "03_iCloud_Notifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B013C03F1FCCD7F70080BDD7 /* Debug */,
+				B013C0401FCCD7F70080BDD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B013C0411FCCD7F70080BDD7 /* Build configuration list for PBXNativeTarget "03_iCloud_Notifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B013C0421FCCD7F70080BDD7 /* Debug */,
+				B013C0431FCCD7F70080BDD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B013C0441FCCD7F70080BDD7 /* Build configuration list for PBXNativeTarget "03_iCloud_NotificationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B013C0451FCCD7F70080BDD7 /* Debug */,
+				B013C0461FCCD7F70080BDD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B013C0471FCCD7F70080BDD7 /* Build configuration list for PBXNativeTarget "03_iCloud_NotificationsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B013C0481FCCD7F70080BDD7 /* Debug */,
+				B013C0491FCCD7F70080BDD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B013C0111FCCD7F70080BDD7 /* Project object */;
+}
