@@ -14,6 +14,8 @@
 		B013C0271FCCD7F70080BDD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B013C0251FCCD7F70080BDD7 /* LaunchScreen.storyboard */; };
 		B013C0321FCCD7F70080BDD7 /* _3_iCloud_NotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C0311FCCD7F70080BDD7 /* _3_iCloud_NotificationsTests.swift */; };
 		B013C03D1FCCD7F70080BDD7 /* _3_iCloud_NotificationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C03C1FCCD7F70080BDD7 /* _3_iCloud_NotificationsUITests.swift */; };
+		B013C04E1FCCDC870080BDD7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C04D1FCCDC870080BDD7 /* Note.swift */; };
+		B013C0511FCCDD8E0080BDD7 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C0501FCCDD8E0080BDD7 /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B013C0381FCCD7F70080BDD7 /* 03_iCloud_NotificationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 03_iCloud_NotificationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B013C03C1FCCD7F70080BDD7 /* _3_iCloud_NotificationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_iCloud_NotificationsUITests.swift; sourceTree = "<group>"; };
 		B013C03E1FCCD7F70080BDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B013C04D1FCCDC870080BDD7 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B013C0501FCCDD8E0080BDD7 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,11 @@
 		B013C01B1FCCD7F70080BDD7 /* 03_iCloud_Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				B013C01C1FCCD7F70080BDD7 /* AppDelegate.swift */,
-				B013C01E1FCCD7F70080BDD7 /* ViewController.swift */,
-				B013C0201FCCD7F70080BDD7 /* Main.storyboard */,
-				B013C0231FCCD7F70080BDD7 /* Assets.xcassets */,
-				B013C0251FCCD7F70080BDD7 /* LaunchScreen.storyboard */,
 				B013C0281FCCD7F70080BDD7 /* Info.plist */,
+				B013C04F1FCCDD670080BDD7 /* Service */,
+				B013C04C1FCCD9CF0080BDD7 /* Model */,
+				B013C04B1FCCD9CE0080BDD7 /* Controller */,
+				B013C04A1FCCD9CC0080BDD7 /* View */,
 			);
 			path = 03_iCloud_Notifications;
 			sourceTree = "<group>";
@@ -123,6 +126,41 @@
 				B013C03E1FCCD7F70080BDD7 /* Info.plist */,
 			);
 			path = 03_iCloud_NotificationsUITests;
+			sourceTree = "<group>";
+		};
+		B013C04A1FCCD9CC0080BDD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B013C0201FCCD7F70080BDD7 /* Main.storyboard */,
+				B013C0231FCCD7F70080BDD7 /* Assets.xcassets */,
+				B013C0251FCCD7F70080BDD7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B013C04B1FCCD9CE0080BDD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B013C01C1FCCD7F70080BDD7 /* AppDelegate.swift */,
+				B013C01E1FCCD7F70080BDD7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B013C04C1FCCD9CF0080BDD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B013C04D1FCCDC870080BDD7 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B013C04F1FCCDD670080BDD7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B013C0501FCCDD8E0080BDD7 /* AlertService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +299,8 @@
 			files = (
 				B013C01F1FCCD7F70080BDD7 /* ViewController.swift in Sources */,
 				B013C01D1FCCD7F70080BDD7 /* AppDelegate.swift in Sources */,
+				B013C0511FCCDD8E0080BDD7 /* AlertService.swift in Sources */,
+				B013C04E1FCCDC870080BDD7 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

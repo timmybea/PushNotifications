@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_3_iCloud_Notifications" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OdO-3e-fzm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                                <color key="barTintColor" red="0.95685797929763794" green="0.8249431848526001" blue="0.26326516270637512" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Notes" id="4M0-Mc-Cxm">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="tGQ-SR-pxc">
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="composedTappedWithSender:" destination="BYZ-38-t0r" id="QCW-3J-CrU"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CV9-CV-uKo">
+                                <rect key="frame" x="0.0" y="96" width="375" height="571"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CV9-CV-uKo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1na-ht-WLA"/>
+                            <constraint firstItem="OdO-3e-fzm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6qX-Wv-EkK"/>
+                            <constraint firstItem="CV9-CV-uKo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BS5-di-0cp"/>
+                            <constraint firstItem="CV9-CV-uKo" firstAttribute="top" secondItem="OdO-3e-fzm" secondAttribute="bottom" id="MZg-uq-eBK"/>
+                            <constraint firstItem="OdO-3e-fzm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qqh-IW-OSz"/>
+                            <constraint firstItem="CV9-CV-uKo" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hA8-Ys-era"/>
+                            <constraint firstItem="OdO-3e-fzm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l2H-E3-WpU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="CV9-CV-uKo" id="Hby-gW-Gtg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="62.518740629685162"/>
+        </scene>
+    </scenes>
+</document>
