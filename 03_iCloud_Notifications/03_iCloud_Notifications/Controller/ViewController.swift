@@ -19,10 +19,21 @@ class ViewController: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
+        getNotes()
+    }
+    
+    func getNotes() {
+        NotesService.getNotes { (notes) in
+            self.notes = notes
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     @IBAction func composedTapped(sender: UIBarButtonItem) {
         AlertService.composeNote(in: self) { (note) in
+            CKService.shared.save(record: note.noteRecord())
             self.insert(note: note)
         }
     }

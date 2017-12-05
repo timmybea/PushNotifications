@@ -16,6 +16,9 @@
 		B013C03D1FCCD7F70080BDD7 /* _3_iCloud_NotificationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C03C1FCCD7F70080BDD7 /* _3_iCloud_NotificationsUITests.swift */; };
 		B013C04E1FCCDC870080BDD7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C04D1FCCDC870080BDD7 /* Note.swift */; };
 		B013C0511FCCDD8E0080BDD7 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C0501FCCDD8E0080BDD7 /* AlertService.swift */; };
+		B013C0551FCCE2100080BDD7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B013C0541FCCE2100080BDD7 /* CloudKit.framework */; };
+		B013C0571FCE30870080BDD7 /* CKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C0561FCE30870080BDD7 /* CKService.swift */; };
+		B0A9FDCF1FD643EC00365B03 /* NotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A9FDCE1FD643EC00365B03 /* NotesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		B013C03E1FCCD7F70080BDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B013C04D1FCCDC870080BDD7 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		B013C0501FCCDD8E0080BDD7 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		B013C0521FCCE20E0080BDD7 /* 03_iCloud_Notifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 03_iCloud_Notifications.entitlements; sourceTree = "<group>"; };
+		B013C0541FCCE2100080BDD7 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B013C0561FCE30870080BDD7 /* CKService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKService.swift; sourceTree = "<group>"; };
+		B0A9FDCE1FD643EC00365B03 /* NotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B013C0551FCCE2100080BDD7 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,7 @@
 				B013C0301FCCD7F70080BDD7 /* 03_iCloud_NotificationsTests */,
 				B013C03B1FCCD7F70080BDD7 /* 03_iCloud_NotificationsUITests */,
 				B013C01A1FCCD7F70080BDD7 /* Products */,
+				B013C0531FCCE2100080BDD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +110,7 @@
 		B013C01B1FCCD7F70080BDD7 /* 03_iCloud_Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				B013C0521FCCE20E0080BDD7 /* 03_iCloud_Notifications.entitlements */,
 				B013C0281FCCD7F70080BDD7 /* Info.plist */,
 				B013C04F1FCCDD670080BDD7 /* Service */,
 				B013C04C1FCCD9CF0080BDD7 /* Model */,
@@ -159,8 +169,18 @@
 			isa = PBXGroup;
 			children = (
 				B013C0501FCCDD8E0080BDD7 /* AlertService.swift */,
+				B013C0561FCE30870080BDD7 /* CKService.swift */,
+				B0A9FDCE1FD643EC00365B03 /* NotesService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		B013C0531FCCE2100080BDD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B013C0541FCCE2100080BDD7 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +252,14 @@
 					B013C0181FCCD7F70080BDD7 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					B013C02C1FCCD7F70080BDD7 = {
 						CreatedOnToolsVersion = 9.1;
@@ -299,6 +327,8 @@
 			files = (
 				B013C01F1FCCD7F70080BDD7 /* ViewController.swift in Sources */,
 				B013C01D1FCCD7F70080BDD7 /* AppDelegate.swift in Sources */,
+				B013C0571FCE30870080BDD7 /* CKService.swift in Sources */,
+				B0A9FDCF1FD643EC00365B03 /* NotesService.swift in Sources */,
 				B013C0511FCCDD8E0080BDD7 /* AlertService.swift in Sources */,
 				B013C04E1FCCDC870080BDD7 /* Note.swift in Sources */,
 			);
@@ -466,11 +496,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 03_iCloud_Notifications/03_iCloud_Notifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9NXK8LBV53;
+				DEVELOPMENT_TEAM = 2733C6P24Y;
 				INFOPLIST_FILE = 03_iCloud_Notifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "timbeals.-3-iCloud-Notifications";
+				PRODUCT_BUNDLE_IDENTIFIER = "timbeals.-3-iCloud-Notifications-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -481,11 +512,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 03_iCloud_Notifications/03_iCloud_Notifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9NXK8LBV53;
+				DEVELOPMENT_TEAM = 2733C6P24Y;
 				INFOPLIST_FILE = 03_iCloud_Notifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "timbeals.-3-iCloud-Notifications";
+				PRODUCT_BUNDLE_IDENTIFIER = "timbeals.-3-iCloud-Notifications-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
